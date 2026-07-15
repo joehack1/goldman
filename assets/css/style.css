@@ -294,6 +294,7 @@ header[data-header] .container {
   position: relative;
   z-index: 3;
   max-width: 650px;
+  margin-left: -34px;
 }
 
 .hero-badge {
@@ -1458,7 +1459,10 @@ header[data-header] .container {
 
   .hero-image { display: none; }
 
-  .hero-content { max-width: 100%; }
+  .hero-content {
+    max-width: 100%;
+    margin-left: 0;
+  }
 
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
 
