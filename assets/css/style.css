@@ -131,31 +131,32 @@ ul { list-style: none; }
 }
 
 /* Header */
-.header {
+.header,
+header[data-header] {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 1000;
-  background: rgba(26, 26, 26, 0.85);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(200,169,81,0.15);
+  background: transparent;
+  border-bottom: 1px solid transparent;
   transition: var(--transition);
   padding: 12px 0;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+  box-shadow: none;
 }
 
-.header.active {
-  background: rgba(26, 26, 26, 0.92);
-  backdrop-filter: blur(25px);
-  -webkit-backdrop-filter: blur(25px);
+.header.active,
+header[data-header].active {
+  background: rgba(26, 26, 26, 0.45);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   padding: 8px 0;
-  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
-  border-bottom: 1px solid rgba(200,169,81,0.2);
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+  border-bottom: 1px solid rgba(200,169,81,0.14);
 }
 
-.header .container {
+.header .container,
+header[data-header] .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
