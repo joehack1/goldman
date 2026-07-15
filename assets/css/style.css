@@ -201,7 +201,9 @@ ul { list-style: none; }
   padding: 8px 18px;
   font-size: 0.95rem;
   font-weight: 500;
-  color: rgba(255,255,255,0.85);
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: 50px;
   transition: var(--transition);
 }
@@ -210,6 +212,7 @@ ul { list-style: none; }
 .navbar-link.active {
   color: var(--black);
   background: var(--gold);
+  border-color: var(--gold);
 }
 
 .header-actions {
