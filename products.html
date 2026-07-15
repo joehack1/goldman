@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - Goldman Pure Beverages</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <header data-header class="active">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="assets/images/goldmanlogo water.png" alt="Goldman Logo" class="logo-img">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <a href="index.html" class="navbar-link" data-nav-link>Home</a>
+        <a href="about.html" class="navbar-link" data-nav-link>About</a>
+        <a href="products.html" class="navbar-link active" data-nav-link>Products</a>
+        <a href="news.html" class="navbar-link" data-nav-link>News</a>
+        <a href="contact.html" class="navbar-link" data-nav-link>Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="header-btn" data-search-btn aria-label="Search">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+          </svg>
+        </button>
+        <button class="menu-toggle-btn" data-menu-toggle-btn aria-label="Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-overlay" data-nav-overlay></div>
+
+  <div class="search-box" data-search-container>
+    <div class="container">
+      <form class="search-form">
+        <input type="text" placeholder="Search..." autofocus>
+        <button type="button" class="search-close-btn" data-search-close-btn aria-label="Close">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-content">
+          <h1>Our Products</h1>
+          <p>Premium quality purified drinking water in multiple sizes.</p>
+          <div class="breadcrumb">
+            <a href="index.html">Home</a> / <span>Products</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" style="padding-top:80px;">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Our Range</span>
+          <h2 class="section-title">Goldman Pure Water Products</h2>
+          <p class="section-text">Purified bottled drinking water in multiple packaging sizes for home, office, and commercial use.</p>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card reveal" data-product="small">
+            <div class="product-image">
+              <span class="product-tag">Popular</span>
+              <img src="assets/images/transparent-water-bottle-studio.jpg" alt="Goldman 500ml Water">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Goldman 500ml</h3>
+              <p class="product-desc">Perfect single-serve bottle for on-the-go hydration. Compact, refreshing, and always pure.</p>
+              <span class="product-price">From KES 20</span>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="small">
+            <div class="product-image">
+              <img src="assets/images/water-bottle-wooden-table.jpg" alt="Goldman 1L Water">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Goldman 1 Litre</h3>
+              <p class="product-desc">Ideal for personal daily hydration. Clean, pure, and refreshing taste every time.</p>
+              <span class="product-price">From KES 30</span>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="medium">
+            <div class="product-image">
+              <img src="assets/images/water-bottle-wooden-table (1).jpg" alt="Goldman 2L Water">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Goldman 2 Litres</h3>
+              <p class="product-desc">Great for family use. Keep everyone hydrated with pure, refreshing Goldman water.</p>
+              <span class="product-price">From KES 50</span>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="large">
+            <div class="product-image">
+              <img src="assets/images/water-drop.jpg" alt="Goldman 5L Water">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Goldman 5 Litres</h3>
+              <p class="product-desc">Perfect for home and office dispensers. Long-lasting supply of clean, safe water.</p>
+              <span class="product-price">From KES 80</span>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="large">
+            <div class="product-image">
+              <span class="product-tag">Bulk</span>
+              <img src="assets/images/water-drop.jpg" alt="Goldman 20L Water">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Goldman 20 Litres</h3>
+              <p class="product-desc">Bulk supply for homes, offices, and commercial use. Maximum value and freshness.</p>
+              <span class="product-price">From KES 200</span>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="commercial">
+            <div class="product-image">
+              <img src="assets/images/hero-bg.jpg" alt="Goldman Crate Supply">
+            </div>
+            <div class="product-info">
+              <h3 class="product-name">Crate Supply</h3>
+              <p class="product-desc">Wholesale crate supply for retailers, shops, and distribution partners across Kenya.</p>
+              <span class="product-price">Contact for pricing</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--white);">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-subtitle">Bulk Orders</span>
+          <h2 class="section-title">Event & Bulk Supply</h2>
+          <p class="section-text">Reliable bulk water supply for events, hotels, schools, and corporate organizations.</p>
+        </div>
+
+        <div class="why-grid">
+          <div class="why-item">
+            <div class="why-num">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h4>Hotels & Restaurants</h4>
+              <p>Consistent supply of premium water for your guests and patrons.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h4>Schools & Institutions</h4>
+              <p>Safe drinking water for students, staff, and visitors.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h4>Corporate Events</h4>
+              <p>Branded water supply for conferences, meetings, and corporate gatherings.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1A1A1A" stroke-width="2.5"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <h4>Retailers & Wholesalers</h4>
+              <p>Competitive wholesale pricing for distribution partners.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <div class="cta-content reveal">
+          <h2>Need Bulk Water Supply?</h2>
+          <p>Contact us today for custom bulk packages tailored to your business or event needs.</p>
+          <a href="contact.html" class="btn btn-gold">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="assets/images/goldmanlogo water.png" alt="Goldman Logo" class="logo-img">
+          </a>
+          <p>Goldman Pure Beverages is a trusted bottled water company dedicated to providing pure, safe, and refreshing drinking water.</p>
+          <div class="footer-social">
+            <a href="https://www.facebook.com/goldmanpurebeverages" target="_blank" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Products</h4>
+          <ul class="footer-links">
+            <li><a href="products.html">500ml Bottles</a></li>
+            <li><a href="products.html">1 Litre Bottles</a></li>
+            <li><a href="products.html">5 Litre Bottles</a></li>
+            <li><a href="products.html">20 Litre Dispenser</a></li>
+            <li><a href="products.html">Bulk Supply</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Contact Info</h4>
+          <ul class="footer-contact">
+            <li>
+              <span class="footer-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </span>
+              Babadogo Lucky Summer Road,<br>Nairobi, Kenya, 00100
+            </li>
+            <li>
+              <span class="footer-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </span>
+              +254 700 000 000
+            </li>
+            <li>
+              <span class="footer-contact-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </span>
+              info@goldmanbeverages.co.ke
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 <span>Goldman Pure Beverages LTD</span>. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" data-back-top-btn aria-label="Back to top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
