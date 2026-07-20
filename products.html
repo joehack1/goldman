@@ -29,6 +29,13 @@
             <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
           </svg>
         </button>
+        <button class="cart-btn" data-cart-btn aria-label="Cart">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+          </svg>
+          <span class="cart-count" data-cart-count>0</span>
+        </button>
         <button class="menu-toggle-btn" data-menu-toggle-btn aria-label="Menu">
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
             <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
@@ -58,7 +65,7 @@
       <div class="container">
         <div class="page-hero-content">
           <h1>Our Products</h1>
-          <p>Premium quality purified drinking water in multiple sizes.</p>
+          <p>Premium quality purified drinking water from Aqua Gold and Hali brands.</p>
           <div class="breadcrumb">
             <a href="index.html">Home</a> / <span>Products</span>
           </div>
@@ -66,82 +73,246 @@
       </div>
     </section>
 
-    <section class="products section" style="padding-top:80px;">
+    <section class="brand-tabs-section">
+      <div class="container">
+        <div class="brand-tabs">
+          <button class="brand-tab active" data-filter-btn="all">
+            <span class="brand-tab-name">All Products</span>
+          </button>
+          <button class="brand-tab" data-filter-btn="aqua-gold">
+            <img src="assets/images/aquagold.png" alt="Aqua Gold" class="brand-tab-logo">
+            <span class="brand-tab-name">Aqua Gold</span>
+          </button>
+          <button class="brand-tab" data-filter-btn="hali">
+            <img src="assets/images/hali.png" alt="Hali" class="brand-tab-logo">
+            <span class="brand-tab-name">Hali</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="products section" style="padding-top:40px;">
       <div class="container">
         <div class="section-header reveal">
           <span class="section-subtitle">Our Range</span>
           <h2 class="section-title">Goldman Pure Water Products</h2>
-          <p class="section-text">Purified bottled drinking water in multiple packaging sizes for home, office, and commercial use.</p>
+          <p class="section-text">Purified bottled drinking water available in Aqua Gold and Hali brands, with multiple packaging sizes for every need.</p>
         </div>
 
         <div class="products-grid">
-          <div class="product-card reveal" data-product="small">
+
+          <!-- Aqua Gold Products -->
+          <div class="product-card reveal" data-product="aqua-gold">
             <div class="product-image">
-              <span class="product-tag">Popular</span>
-              <img src="assets/images/500ml.jpg" alt="Goldman 500ml Water">
+              <span class="product-tag brand-tag-aqua">Aqua Gold</span>
+              <img src="assets/images/500ml.jpg" alt="Aqua Gold 500ml">
             </div>
             <div class="product-info">
-              <h3 class="product-name">Goldman 500ml</h3>
+              <div class="product-brand-logo">
+                <img src="assets/images/aquagold.png" alt="Aqua Gold">
+              </div>
+              <h3 class="product-name">Aqua Gold 500ml</h3>
               <p class="product-desc">Perfect single-serve bottle for on-the-go hydration. Compact, refreshing, and always pure.</p>
-              <span class="product-price">From KES 20</span>
+              <div class="product-bottom">
+                <span class="product-price">KES 20</span>
+                <button class="add-to-cart-btn" data-product-id="aq-500ml" data-product-name="Aqua Gold 500ml" data-product-price="20">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
 
-          <div class="product-card reveal" data-product="small">
+          <div class="product-card reveal" data-product="aqua-gold">
             <div class="product-image">
-              <img src="assets/images/1l.jpg" alt="Goldman 1L Water">
+              <span class="product-tag brand-tag-aqua">Aqua Gold</span>
+              <img src="assets/images/1l.jpg" alt="Aqua Gold 1 Litre">
             </div>
             <div class="product-info">
-              <h3 class="product-name">Goldman 1 Litre</h3>
+              <div class="product-brand-logo">
+                <img src="assets/images/aquagold.png" alt="Aqua Gold">
+              </div>
+              <h3 class="product-name">Aqua Gold 1 Litre</h3>
               <p class="product-desc">Ideal for personal daily hydration. Clean, pure, and refreshing taste every time.</p>
-              <span class="product-price">From KES 30</span>
+              <div class="product-bottom">
+                <span class="product-price">KES 30</span>
+                <button class="add-to-cart-btn" data-product-id="aq-1l" data-product-name="Aqua Gold 1 Litre" data-product-price="30">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
 
-          <div class="product-card reveal" data-product="medium">
+          <div class="product-card reveal" data-product="aqua-gold">
             <div class="product-image">
-              <img src="assets/images/water-bottle-wooden-table (1).jpg" alt="Goldman 2L Water">
+              <span class="product-tag brand-tag-aqua">Aqua Gold</span>
+              <img src="assets/images/5l.jpg" alt="Aqua Gold 5 Litres">
             </div>
             <div class="product-info">
-              <h3 class="product-name">Goldman 2 Litres</h3>
-              <p class="product-desc">Great for family use. Keep everyone hydrated with pure, refreshing Goldman water.</p>
-              <span class="product-price">From KES 50</span>
-            </div>
-          </div>
-
-          <div class="product-card reveal" data-product="large">
-            <div class="product-image">
-              <img src="assets/images/5l.jpg" alt="Goldman 5L Water">
-            </div>
-            <div class="product-info">
-              <h3 class="product-name">Goldman 5 Litres</h3>
+              <div class="product-brand-logo">
+                <img src="assets/images/aquagold.png" alt="Aqua Gold">
+              </div>
+              <h3 class="product-name">Aqua Gold 5 Litres</h3>
               <p class="product-desc">Perfect for home and office dispensers. Long-lasting supply of clean, safe water.</p>
-              <span class="product-price">From KES 80</span>
+              <div class="product-bottom">
+                <span class="product-price">KES 80</span>
+                <button class="add-to-cart-btn" data-product-id="aq-5l" data-product-name="Aqua Gold 5 Litres" data-product-price="80">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
 
-          <div class="product-card reveal" data-product="large">
+          <div class="product-card reveal" data-product="aqua-gold">
             <div class="product-image">
-              <span class="product-tag">Bulk</span>
-              <img src="assets/images/20l.jpg" alt="Goldman 20L Water">
+              <span class="product-tag brand-tag-aqua">Aqua Gold</span>
+              <img src="assets/images/5l.jpg" alt="Aqua Gold 10 Litres">
             </div>
             <div class="product-info">
-              <h3 class="product-name">Goldman 20 Litres</h3>
+              <div class="product-brand-logo">
+                <img src="assets/images/aquagold.png" alt="Aqua Gold">
+              </div>
+              <h3 class="product-name">Aqua Gold 10 Litres</h3>
+              <p class="product-desc">Ideal for larger households and offices. Great value and pure hydration.</p>
+              <div class="product-bottom">
+                <span class="product-price">KES 150</span>
+                <button class="add-to-cart-btn" data-product-id="aq-10l" data-product-name="Aqua Gold 10 Litres" data-product-price="150">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="aqua-gold">
+            <div class="product-image">
+              <span class="product-tag brand-tag-aqua">Aqua Gold</span>
+              <img src="assets/images/20l.jpg" alt="Aqua Gold 18.9 Litres">
+            </div>
+            <div class="product-info">
+              <div class="product-brand-logo">
+                <img src="assets/images/aquagold.png" alt="Aqua Gold">
+              </div>
+              <h3 class="product-name">Aqua Gold 18.9 Litres</h3>
               <p class="product-desc">Bulk supply for homes, offices, and commercial use. Maximum value and freshness.</p>
-              <span class="product-price">From KES 200</span>
+              <div class="product-bottom">
+                <span class="product-price">KES 250</span>
+                <button class="add-to-cart-btn" data-product-id="aq-18-9l" data-product-name="Aqua Gold 18.9 Litres" data-product-price="250">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
 
-          <div class="product-card reveal" data-product="commercial">
+          <!-- Hali Products -->
+          <div class="product-card reveal" data-product="hali">
             <div class="product-image">
-              <img src="assets/images/crate.jpg" alt="Goldman Crate Supply">
+              <span class="product-tag brand-tag-hali">Hali</span>
+              <img src="assets/images/500ml.jpg" alt="Hali 500ml">
             </div>
             <div class="product-info">
-              <h3 class="product-name">Crate Supply</h3>
-              <p class="product-desc">Wholesale crate supply for retailers, shops, and distribution partners across Kenya.</p>
-              <span class="product-price">Contact for pricing</span>
+              <div class="product-brand-logo">
+                <img src="assets/images/hali.png" alt="Hali">
+              </div>
+              <h3 class="product-name">Hali 500ml</h3>
+              <p class="product-desc">The Sip of Life - perfect single-serve bottle for on-the-go hydration.</p>
+              <div class="product-bottom">
+                <span class="product-price">KES 20</span>
+                <button class="add-to-cart-btn" data-product-id="hl-500ml" data-product-name="Hali 500ml" data-product-price="20">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
             </div>
           </div>
+
+          <div class="product-card reveal" data-product="hali">
+            <div class="product-image">
+              <span class="product-tag brand-tag-hali">Hali</span>
+              <img src="assets/images/1l.jpg" alt="Hali 1 Litre">
+            </div>
+            <div class="product-info">
+              <div class="product-brand-logo">
+                <img src="assets/images/hali.png" alt="Hali">
+              </div>
+              <h3 class="product-name">Hali 1 Litre</h3>
+              <p class="product-desc">The Sip of Life - ideal for personal daily hydration. Clean and refreshing.</p>
+              <div class="product-bottom">
+                <span class="product-price">KES 30</span>
+                <button class="add-to-cart-btn" data-product-id="hl-1l" data-product-name="Hali 1 Litre" data-product-price="30">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="hali">
+            <div class="product-image">
+              <span class="product-tag brand-tag-hali">Hali</span>
+              <img src="assets/images/5l.jpg" alt="Hali 5 Litres">
+            </div>
+            <div class="product-info">
+              <div class="product-brand-logo">
+                <img src="assets/images/hali.png" alt="Hali">
+              </div>
+              <h3 class="product-name">Hali 5 Litres</h3>
+              <p class="product-desc">The Sip of Life - perfect for home and office dispensers.</p>
+              <div class="product-bottom">
+                <span class="product-price">KES 80</span>
+                <button class="add-to-cart-btn" data-product-id="hl-5l" data-product-name="Hali 5 Litres" data-product-price="80">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="hali">
+            <div class="product-image">
+              <span class="product-tag brand-tag-hali">Hali</span>
+              <img src="assets/images/5l.jpg" alt="Hali 10 Litres">
+            </div>
+            <div class="product-info">
+              <div class="product-brand-logo">
+                <img src="assets/images/hali.png" alt="Hali">
+              </div>
+              <h3 class="product-name">Hali 10 Litres</h3>
+              <p class="product-desc">The Sip of Life - ideal for larger households and offices.</p>
+              <div class="product-bottom">
+                <span class="product-price">KES 150</span>
+                <button class="add-to-cart-btn" data-product-id="hl-10l" data-product-name="Hali 10 Litres" data-product-price="150">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="product-card reveal" data-product="hali">
+            <div class="product-image">
+              <span class="product-tag brand-tag-hali">Hali</span>
+              <img src="assets/images/20l.jpg" alt="Hali 18.9 Litres">
+            </div>
+            <div class="product-info">
+              <div class="product-brand-logo">
+                <img src="assets/images/hali.png" alt="Hali">
+              </div>
+              <h3 class="product-name">Hali 18.9 Litres</h3>
+              <p class="product-desc">The Sip of Life - bulk supply for homes, offices, and commercial use.</p>
+              <div class="product-bottom">
+                <span class="product-price">KES 250</span>
+                <button class="add-to-cart-btn" data-product-id="hl-18-9l" data-product-name="Hali 18.9 Litres" data-product-price="250">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
@@ -206,6 +377,34 @@
     </section>
   </main>
 
+  <div class="cart-overlay" data-cart-overlay></div>
+  <div class="cart-sidebar" data-cart-sidebar>
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button class="cart-close" data-cart-close aria-label="Close Cart">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+    <div class="cart-items" data-cart-items>
+      <div class="cart-empty">
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+          <circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
+        </svg>
+        <p>Your cart is empty</p>
+      </div>
+    </div>
+    <div class="cart-footer" data-cart-footer>
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="cart-total-price" data-cart-total>KES 0</span>
+      </div>
+      <a href="contact.html" class="btn btn-gold cart-checkout-btn">Checkout</a>
+    </div>
+  </div>
+
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
@@ -239,13 +438,13 @@
         </div>
 
         <div class="footer-col">
-          <h4 class="footer-heading">Products</h4>
+          <h4 class="footer-heading">Our Brands</h4>
           <ul class="footer-links">
+            <li><a href="products.html">Aqua Gold</a></li>
+            <li><a href="products.html">Hali</a></li>
             <li><a href="products.html">500ml Bottles</a></li>
-            <li><a href="products.html">1 Litre Bottles</a></li>
             <li><a href="products.html">5 Litre Bottles</a></li>
-            <li><a href="products.html">20 Litre Dispenser</a></li>
-            <li><a href="products.html">Bulk Supply</a></li>
+            <li><a href="products.html">18.9 Litre Dispenser</a></li>
           </ul>
         </div>
 
